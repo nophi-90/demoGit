@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+header{
+    /* padding: 20px;  */
+    background-color: black;
+    color: #9E958A;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+header:hover{
+    background: #333333;
+}
+header.sticky{
+    background: black;
+}
+.menu{
+    padding-top: 5px; 
+    padding-bottom: 5px;
+    font-size: 1.5vw;
+}
+.menu > ul{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.menu > p{
+    padding: 0 10px;
+}
+.menu > ul > li{
+    width: 30%;
+    position: relative;
+}
+.product{
+    position: absolute;
+    right: 20%;
+    width: 60%;
+    padding-left: 30px;
+    background-color: black;
+    font-size: 1.2vw;
+    display: none;
+    animation-duration: 0.4s;
+    border: 2px solid #9E958A;
+    z-index: 1;
+}
+.product > a:hover {
+    text-decoration: underline;
+}
+li:hover .product{
+    display: block;
+}
+.product > a{
+    text-decoration: none;
+    color: #9E958A;
+    display: flex;
+    padding: 2px;
+}
+.div3{
+    color: #9E958A;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+.div3:hover{
+    text-decoration: underline;
+}
+ul, li{
+    list-style: none;
+}
+
+/* chuyển động ảnh */
+.aspect-ratio-169 {
+    display: block;
+    position: relative;
+    padding-top: 56.25%;
+    transition: 0.3s;
+}
+#slide{
+    padding-bottom: 30px;
+    border-bottom: 2px solid #000;
+    overflow: hidden;
+    background: black;
+}
+.aspect-ratio-169 img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.dot-container{
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.load{
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    border: 2px solid #9E958A;
+    border-radius: 50%;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.load.a{
+    background-color: white;
+}
+/*--------------------------------------------------*/
+.chucnang{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #9E958A;
+    background: black;
+}
+.dongmot{
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.dongmot a{
+    text-decoration: none;
+    padding: 0 9px;
+    color: #9E958A;
+    font-size: 20px;
+}
+.donghai{
+    text-align: center;
+    justify-content: center;
+}
+.donghai a{
+    text-decoration: none;
+    color: #9E958A;
+    font-size: 20px;
+}
+.tcan{
+    background: black;
+    font-family: serif;
+    color: #9E958A;
+    text-align: center;
+}
+.them{
+    width: 80%;
+    border: 2px solid #9E958A;
+    font-family: serif;
+    font-size: 25px;
+    color: #9E958A;
+    background-color: black;
+}
+.them:hover{
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+}
+.chuyenmau:hover{
+    color: black;
+    background-color: #9E958A;
+}
+.allhh{
+    background: black;
+    font-family: serif;
+    color: #9E958A;
+    text-align: center;
+    justify-content: center;
+}
+.hhttpd{
+    display: flex;
+    justify-content: center;
+}
+.cotsp{
+    justify-content: center;
+    display: flex;
+}
+.oofcotsp{
+    width: 30%;
+    padding: 20px;
+}
+.oofcotsp:hover{
+    background-color: #9E958A;
+    color: black;
+}
+/* phần code đăng nhập */
+.dn{
+    background-color: #333333d4;
+    font-family: serif;
+    width: 400px;
+    border-radius: 15px;
+    padding: 25px;
+    border: 2px solid #9E958A;
+    box-shadow: 0 0 15px #000;
+}
+.dn .input{
+    width: 100%;
+    height: 40px;
+    margin: 20px 0;
+}
+.input input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #9E958A;
+    color: #9E958A;
+    font-size: 20px;
+    padding-left: 4px;
+}
+.dn .btn{
+    width: 100%;
+    height: 40px;
+    background-color: #9E958A;
+    font-size: 25px;
+    border-radius: 20px;
+}
+.link{
+    text-align: center;
+    padding: 5px; 
+    margin: -10px 0px 10px;
+}
+.link > a{
+    text-decoration: none;
+    color: #9E958A;
+}
+.link:hover{
+    text-decoration: underline;
+    color: #9E958A;
+}
+.link-dk{
+    text-align: center;
+    padding: 5px; 
+    margin-top: 10px;
+}
+.link-dk > p > a{
+    text-decoration: none;
+    color: #9E958A;
+}
+.dk:hover{
+    text-decoration: underline;
+}
+.showloi{
+    color: red;
+    display: none;
+}
